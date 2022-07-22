@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="/styles.css">
+    <!--Link favicon-->
+
+    <title>Pseudoclases</title>
+</head>
+<body style="background-color: rgb(151, 178, 214);">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Pseudo clases</h1>
+            <p>Una pseudoclase es un selector que marca los elementos que están en un estado específico, por ejemplo, los que son el primer elemento de su tipo, o aquellos por los que el cursor les pasa por encima.
+            </p>
+        </div>
+    <div class="container">
+        <div class="caja1">
+            <div class="col-xs-12 col-xxl-6 col-ms-12 col-md-6 col-lg-6">
+                <h2 class="text-center">:active</h2>
+                <p>La pseudoclase :active especifica cuando un elemento está activo, es decir, cuando está siendo
+                    clicado
+                    por el usuario, de esta manera podemos ver cuando el boton se presiona y cambia</p>
+                    <h6><strong>Ejemplo=</strong></h6>
+                <a href="#"><button type="button" class="btn btn-dark active">Que tal?</button></a>
+                <br>
+                <br>
+           </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:checked</h2>
+                <p>El selector checked es ideal para cambiar de estilo a las checkbox que son las casillas de verificación en los formularios de una manera sencilla sin emplear JavaScript y que funcionan muy bien al emplear las transiciones para los cambios de un estado a otro como hemos visto en otros tutoriales en los que hablamos de las transiciones en CSS</p>
+                    <div class="checked">
+                        <input type="radio" name="my-input" id="yes">
+                        <label for="yes">Si</label>
+                      
+                        <input type="radio" name="my-input" id="no">
+                        <label for="no">No</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="my-checkbox" id="opt-in">
+                        <label for="opt-in">Registrate</label>
+                      </div>
+                      
+                      <select name="my-select" id="fruit">
+                        <option value="opt1">Ingresa</option>
+                        <option value="opt1">Cedula ciudadania</option>
+                        <option value="opt2">Pasaporte</option>
+                        <option value="opt3">Email</option>
+                        <option value="opt1">Cedula extranjera</option>
+                      </select>
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:default</h2>
+                <p>pseudo-clase aplica estilo para formar elementos que se establecen de forma predeterminada en un grupo de elementos similares. Por ejemplo, podemos tener dos botones para enviar datos de formulario al servidor. Uno de estos botones está configurado por defecto, podemos cambiar su estilo a través de :default</p>
+                <div class="input">
+                    <input type="checkbox" id="nz">
+                    <label for="nz">Roblox
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="au" checked>
+                    <label for="au">Minecraft
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="uk">
+                    <label for="uk">LOL
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="us">
+                    <label for="us">Genshin
+                    </label>
+                </div>    
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                    <h2 class="text-center">:disabled</h2>
+                    <p>s una pseudo-clase que representa cualquier elemento deshabilitado. Funciona como una condicional en la que aplica los estilos, siempre y cuando los elementos cumplan. Es decir, cuando los elementos tienen el atributo disabled</p>
+                    <input type="text" placeholder="Habilitado">
+                    <br>
+                    <br>
+                    <input type="text" disabled placeholder="deshabilitado">
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:visited</h2>
+                <p>representa enlaces que el usuario ya ha visitado. Por motivos de privacidad, los estilos que se pueden modificar con este selector son muy limitados</p>
+                <a href="#" class="visited">BIENVENIDO!</a>
+                <br>
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:valid</h2>
+                <p>La pseudoclase :valid de CSS representa cualquier elemento de tipo input u otro elemento del
+                    formulario cuyo contenido se valide satisfactoriamente. Esto permite que los campos válidos adopten
+                    fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados
+                    correctamente.</p>
+                <input type="email" name="" id="nz" class="valid" value="pepito@gmail.com" placeholder="Email">
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:enabled</h2>
+                <p>:enabled CSS representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco. El elemento también tiene un estado deshabilitado el en cuál, no puede ser activado ni acepta el foco</p>
+                <input type="text" placeholder="Disponible">
+                <br>
+                <br>
+                <input type="text" placeholder="Disponible">
+                <br>
+                <br>
+                <input type="text" disabled placeholder="No disponible">
+                <br>
+                <br>
+                <input type="button" value="Enviar">
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:first-child / :last-child</h2>
+                <p>Representan el primer y último elemento entre un grupo de elementos hermanos, respectivamente.</p>
+                <ul>
+                    <li>Objeto 1</li>
+                    <li>Objeto 2</li>
+                    <li>Objeto 3
+                      <ul>
+                        <li>Objeto 3.1</li>
+                        <li>Objeto 3.2</li>
+                        <li>Objeto 3.3</li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:focus</h2>
+                <p>Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se
+                    activa cuando el usuario hace clic o toca un elemento.</p>
+                    <input class="red-input" value="Voy a ser de color rojo cuando enfoque.">
+                    <br>
+                    <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+            </div>
+            <div class="col-xs12 col-xxl-6 col-md-4 col-lg-4"> 
+                <h2 class="text-center">:hover</h2>
+                <p>Coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no
+                    necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con
+                    el cursor.</p>
+                <a href="#">Vamos</a>
+            </div>
+        </div>
+    </div>
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: lightblue ;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.active:active {
+    font-weight: bold;
+    color: black;
+    background: whitesmoke;
+}
+
+:checked {
+    margin-left: 25px;
+}
+
+input:default {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .5);
+}
+
+input:disabled {
+    background-color: #000;
+}
+
+input:enabled {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li {
+    color: rgb(51, 255, 0);
+  }
+  
+  ul li:first-child {
+    color: red;
+    font-weight: bold;
+  }
+
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+
+
+.boton {
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: .6;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+a {
+    background-color: powderblue;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
+
+.valid:valid {
+    background: rgb(9, 206, 9);
+}
+.visited {
+    color: whitesmoke;
+}
+
+.visited:visited {
+    text-decoration: none;
+    opacity: .6;
+}
